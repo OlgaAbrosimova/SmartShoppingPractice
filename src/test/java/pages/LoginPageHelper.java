@@ -53,4 +53,9 @@ public class LoginPageHelper extends PageBase{
     public String getErrorMessageText() {
         return authentificationErrorMessage.getText();
     }
+
+    public LoginPageHelper waitUntilMessageAppears() {
+        waitUntilElementIsVisible(authentificationErrorMessage, 15);
+        return this;
+    }
 }

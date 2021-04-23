@@ -13,7 +13,7 @@ public class HomePageHelper extends PageBase {
     }
 
     public HomePageHelper waitUntilPageIsLoaded() {
-        waitUntilElementIsClickable(homePageTitle, 15);
+        waitUntilElementIsVisible(homePageTitle, 15);
         return this;
     }
 
